@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/menu_usur"
+
+        android:orderInCategory="101"
+        android:title="@string/strinusuarios" />
+
+
+    <item
+        android:id="@+id/menu_regi"
+        android:title="@string/agreregion"
+        android:orderInCategory="102"/>
+
+    <item
+                android:id="@+id/menu_ofic"
+        android:title="@string/agrerofic"
+        android:orderInCategory="103"/>
+
+    <item
+
+        android:id="@+id/menu_enviar"
+        android:title="@string/enviarotroCorreo"
+        android:orderInCategory="104"/>
+
+    <item
+        android:id="@+id/menu_info"
+        android:orderInCategory="105"
+        android:title="@string/infovers" />
+
+
+</menu>

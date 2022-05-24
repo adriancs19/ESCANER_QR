@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarOficina">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fon1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <!-- A CardView that contains a TextView -->
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:background="@color/Pani1"
+
+            android:fitsSystemWindows="false"
+            app:contentInsetStart="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="244dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_pani2" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="@string/esc_ner_de_c_digos_qr"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="322dp"
+
+            android:fillViewport="true"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <!-- A CardView that contains a TextView -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view2"
+                    android:layout_width="337dp"
+                    android:layout_height="276dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    app:cardCornerRadius="13dp"
+                    app:contentPadding="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@+id/divider">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:text="@string/agregar_nueva_oficina1"
+                            android:textColor="@color/TextColor4"
+                            android:textSize="17sp" />
+
+                        <View
+                            android:id="@+id/divider4"
+
+                            android:layout_width="330sp"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@color/TextColor4" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/lbregion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="start|top"
+                                android:text="@string/regi_n1"
+
+                                android:textColor="@color/TextColor4"
+                                android:textSize="14sp" />
+
+                            <Spinner
+                                android:id="@+id/spRegion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/digite_el_nombre_de_la_oficina12"
+                            android:textColor="@color/TextColor4"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtoficina"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginTop="10dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:hint="@string/editTextofinci"
+                            android:importantForAutofill="no"
+                            android:inputType="textMultiLine"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:gravity="center_horizontal"
+
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnguardar"
+                                style="?android:attr/buttonBarStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="#D0D7E3"
+                                android:onClick="GuardarOficina"
+                                android:text="@string/agregar_oficina"
+                                android:textColor="@color/TextColor4"
+                                android:textSize="12sp" />
+
+                            <Button
+                                android:id="@+id/btninicio"
+                                style="?android:attr/buttonBarStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:background="#D0D7E3"
+                                android:onClick="Inicio"
+                                android:text="@string/regresar78"
+                                android:textColor="@color/TextColor4"
+                                android:textSize="12sp" />
+
+                            <Button
+                                android:id="@+id/button5"
+                                style="?android:attr/buttonBarStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="#D0D7E3"
+                                android:onClick="Salir"
+                                android:text="@string/salirr"
+                                android:textColor="@color/TextColor4"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="?attr/actionModeSplitBackground"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
